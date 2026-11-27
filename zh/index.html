@@ -2,109 +2,247 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>首页 | 寰创投资管理</title>
   <meta name="description" content="上海寰创投资管理有限公司。立足区域房地产投资经验，以市场研究为基础开展中国A股投资。">
-  <meta name="theme-color" content="#FBF7EF">
+  <meta name="theme-color" content="#4B281A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="首页 | 寰创投资管理">
+  <meta property="og:description" content="上海寰创投资管理有限公司。立足区域房地产投资经验，以市场研究为基础开展中国A股投资。">
+  <meta property="og:image" content="../assets/media/hero-shanghai.jpg">
+  <link rel="alternate" hreflang="zh-CN" href="../zh/index.html">
   <link rel="alternate" hreflang="en" href="../en/index.html">
-  <link rel="alternate" hreflang="zh-CN" href="index.html">
   <link rel="icon" href="../01_Logos/favicon.ico">
   <link rel="apple-touch-icon" href="../01_Logos/favicon_180.png">
   <link rel="stylesheet" href="../assets/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
   <a class="skip" href="#main">跳转至正文</a>
-  <header>
-    <div class="wrap">
-      <nav aria-label="主导航">
-        <a aria-label="寰创首页" href="index.html"><img class="logo" src="../01_Logos/HUANCHUANG_horizontal_color.svg" width="1260" height="285" alt="寰创投资管理"></a>
-        <button type="button" class="menu" aria-controls="navigation" aria-expanded="false" data-label-open="关闭" data-label-closed="菜单">菜单</button>
-        <div class="links" id="navigation">
-          <a aria-current="page" href="index.html">首页</a>
-          <a href="about.html">关于我们</a>
-          <a href="investment.html">投资业务</a>
-          <a href="contact.html">联系我们</a>
+  <header class="site-header is-overlay">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="寰创首页">
+        <img class="logo-dark" src="../01_Logos/HUANCHUANG_horizontal_color.svg" width="1260" height="285" alt="寰创投资管理">
+        <img class="logo-light" src="../01_Logos/HUANCHUANG_horizontal_white.svg" width="1260" height="285" alt="" aria-hidden="true">
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <div class="nav-links" id="navigation">
+          <a href="index.html" style="--i:0" aria-current="page">首页</a>
+          <a href="about.html" style="--i:1">关于我们</a>
+          <a href="investment.html" style="--i:2">投资业务</a>
+          <a href="contact.html" style="--i:3">联系我们</a>
         </div>
-        <a class="lang-switch" href="../en/index.html" hreflang="en" lang="en">EN</a>
       </nav>
+      <a class="lang-switch" href="../en/index.html" hreflang="en" lang="en">EN</a>
+      <button type="button" class="menu-btn" aria-controls="navigation" aria-expanded="false" data-label-open="关闭" data-label-closed="菜单"><span class="menu-label">菜单</span><span class="bars" aria-hidden="true"><i></i><i></i></span></button>
     </div>
   </header>
   <main id="main">
-    <div class="wrap">
-      <section class="hero reveal">
-        <div>
-          <p class="eyebrow">上海 · 创立于2014年</p>
-          <h1>洞察市场，<br>审慎判断，<br>专注投资。</h1>
-          <p class="intro">立足区域房地产投资经验，以市场研究为基础开展中国A股投资。</p>
-          <a class="textlink" href="investment.html">了解投资业务<span class="arrow" aria-hidden="true"></span></a>
-        </div>
-        <figure>
-          <img src="../assets/hero.svg" width="1200" height="820" alt="建筑概念示意图：住宅楼及景观">
-          <figcaption class="caption">建筑概念示意图 · 非公司实际投资项目</figcaption>
-        </figure>
-      </section>
-      <div class="bar">
-        <div><span class="stat">2014</span><span class="small">成立于上海</span></div>
-        <div><span class="stat">2018</span><span class="small">拓展A股投资业务</span></div>
-        <div><span class="stat">两大</span><span class="small">核心投资方向</span></div>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="auto" poster="../assets/media/hero-shanghai.jpg">
+          <source src="../assets/media/hero-shanghai.mp4" type="video/mp4">
+        </video>
       </div>
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">投资方向</p>
-            <h2>两大市场，审慎投资。</h2>
-          </div>
-          <p class="muted">以研究与经验为基础，关注房地产权益与上市公司股票。</p>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow eyebrow--light hero-fade" style="--d:.1s">上海 · 创立于2014年</p>
+        <h1 class="split-lines"><span class="line"><span style="--i:0">洞察市场，</span></span><span class="line"><span style="--i:1">审慎判断，</span></span><span class="line"><span style="--i:2">专注投资。</span></span></h1>
+        <p class="lead hero-fade" style="--d:.75s">立足区域房地产投资经验，以市场研究为基础开展中国A股投资。</p>
+        <div class="hero-actions hero-fade" style="--d:.9s">
+          <a class="btn btn--light" href="investment.html">了解投资业务<span class="arrow" aria-hidden="true"></span></a>
+          <a class="textlink textlink--light" href="about.html">关于寰创<span class="arrow" aria-hidden="true"></span></a>
         </div>
-        <div class="cards">
-          <article class="card">
-            <span class="number">01 / 房地产</span>
+      </div>
+      <div class="wrap hero-foot hero-fade" style="--d:1.1s">
+        <span>城市概念影像 · AI 生成，非公司投资项目</span>
+        <span class="scroll-cue"><i></i>向下浏览</span>
+      </div>
+    </section>
+
+    <section aria-label="公司概览数据">
+      <div class="wrap stats" data-stagger>
+          <div class="stat"><span class="stat-num" data-count="2014" data-from="1990">2014</span><span class="stat-label">成立于上海</span></div>
+          <div class="stat"><span class="stat-num" data-count="2018" data-from="2000">2018</span><span class="stat-label">拓展A股投资业务</span></div>
+          <div class="stat"><span class="stat-num" data-count="2" data-from="0">2</span><span class="stat-label">核心投资方向</span></div>
+          <div class="stat"><span class="stat-num" data-count="2" data-from="0">2</span><span class="stat-label">房地产重点关注区域</span></div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>房地产项目股权投资</span><span>中国A股投资</span><span>上海及周边地区</span><span>成都及周边市县</span><span>市场研究</span><span>上市公司分析</span><span>共同投资及管理</span><span>自有资金</span><span>房地产项目股权投资</span><span>中国A股投资</span><span>上海及周边地区</span><span>成都及周边市县</span><span>市场研究</span><span>上市公司分析</span><span>共同投资及管理</span><span>自有资金</span></div></div>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">投资方向</p><h2>两大市场，审慎投资。</h2></div>
+          <p>以研究与经验为基础，关注房地产权益与上市公司股票。</p>
+        </div>
+        <div class="features">
+        <article class="feature reveal">
+          <div class="feature-media img-reveal"><img src="../assets/media/realestate-aerial.jpg" width="1024" height="768" alt="住宅及商业开发项目航拍概念图" loading="lazy" decoding="async"><span class="feature-tag">Real Estate</span></div>
+          <div class="feature-body">
+            <span class="feature-num">01 / 房地产</span>
             <h3>了解区域市场，参与项目投资。</h3>
             <p>关注上海及周边地区、四川成都及周边市县的商业及住宅开发项目股权投资。</p>
             <a class="textlink" href="investment.html#real-estate">房地产项目股权投资<span class="arrow" aria-hidden="true"></span></a>
-          </article>
-          <article class="card">
-            <span class="number">02 / 证券投资</span>
+          </div>
+        </article>
+        <article class="feature reveal" style="--d:.15s">
+          <div class="feature-media img-reveal"><img src="../assets/media/research-desk.jpg" width="1024" height="768" alt="研究工作场景概念图" loading="lazy" decoding="async"><span class="feature-tag">A-Shares</span></div>
+          <div class="feature-body">
+            <span class="feature-num">02 / 证券投资</span>
             <h3>洞察市场，研究企业。</h3>
             <p>以市场研究及上市公司分析为依据，使用自有资金参与中国境内A股市场投资。</p>
             <a class="textlink" href="investment.html#a-shares">A股投资<span class="arrow" aria-hidden="true"></span></a>
-          </article>
+          </div>
+        </article>
         </div>
-      </section>
-    </div>
-    <section class="dark section">
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">业务一览</p><h2>两项业务，一张概览。</h2></div>
+          <p>从投资领域、关注区域到参与方式，快速了解寰创的两大投资方向。</p>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="data-table">
+            <caption class="sr-only">寰创两项业务对比</caption>
+            <thead><tr><th scope="col">对比项</th><th scope="col"><span class="dot" aria-hidden="true"></span>房地产项目股权投资</th><th scope="col"><span class="dot dot--rust" aria-hidden="true"></span>中国A股投资</th></tr></thead>
+            <tbody data-stagger>
+              <tr><th scope="row">投资领域</th><td data-label="房地产项目股权投资">商业及住宅房地产开发项目</td><td data-label="中国A股投资" class="is-rust">中国境内A股二级市场</td></tr>
+              <tr><th scope="row">关注区域</th><td data-label="房地产项目股权投资">上海及周边地区；四川成都及周边市县</td><td data-label="中国A股投资" class="is-rust">中国境内上市公司</td></tr>
+              <tr><th scope="row">参与方式</th><td data-label="房地产项目股权投资">项目股权投资，部分项目与当地开发企业共同投资及管理</td><td data-label="中国A股投资" class="is-rust">使用公司自有资金投资</td></tr>
+              <tr><th scope="row">判断依据</th><td data-label="房地产项目股权投资">房地产开发与项目管理经验</td><td data-label="中国A股投资" class="is-rust">市场环境分析与上市公司研究</td></tr>
+              <tr><th scope="row">开展时间</th><td data-label="房地产项目股权投资">2014年起</td><td data-label="中国A股投资" class="is-rust">2018年起</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">根据本网站公开的企业信息整理。</p>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap region">
+        <div class="reveal">
+          <p class="eyebrow">区域布局</p>
+          <h2>立足上海，联动成都。</h2>
+          <p class="lead">房地产业务聚焦两个区域：上海及周边地区，以及四川成都及周边市县。</p>
+          <ul class="region-list" data-stagger>
+            <li><span class="region-dot" aria-hidden="true"></span><div><b>上海及周边地区</b><span>公司所在地，关注商业及住宅开发项目</span></div></li>
+            <li><span class="region-dot" aria-hidden="true"></span><div><b>成都及周边市县</b><span>四川区域商业及住宅开发项目</span></div></li>
+          </ul>
+        </div>
+        <div class="reveal" style="--d:.2s">
+        <svg class="map map-anim" viewBox="0 0 640 420" role="img" aria-labelledby="map-title">
+          <title id="map-title">寰创房地产业务关注区域示意图：上海及周边地区、成都及周边市县</title>
+          <defs>
+            <pattern id="map-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3"></circle></pattern>
+          </defs>
+          <g class="map-grid"><rect width="640" height="420" fill="url(#map-dots)"></rect></g>
+          <path class="map-river" d="M40 312 C 120 292, 170 262, 226 274 S 330 312, 392 262 S 500 214, 604 226"></path>
+          <path class="map-route-base" d="M150 270 Q 330 70 500 204"></path>
+          <path class="map-route-draw" pathLength="1" d="M150 270 Q 330 70 500 204"></path>
+          <circle class="map-traveller" r="4">
+            <animateMotion dur="5.5s" repeatCount="indefinite" path="M150 270 Q 330 70 500 204"></animateMotion>
+          </circle>
+          <g class="map-node" transform="translate(150 270)">
+            <circle class="pulse" r="10"></circle><circle class="pulse pulse--late" r="10"></circle><circle class="core" r="6"></circle>
+            <text class="map-label" x="0" y="46" text-anchor="middle">成都</text>
+            <text class="map-sub" x="0" y="66" text-anchor="middle">CHENGDU · 及周边市县</text>
+          </g>
+          <g class="map-node" transform="translate(500 204)">
+            <circle class="pulse" r="10"></circle><circle class="pulse pulse--late" r="10"></circle><circle class="core" r="6"></circle>
+            <text class="map-label" x="0" y="46" text-anchor="middle">上海</text>
+            <text class="map-sub" x="0" y="66" text-anchor="middle">SHANGHAI · 及周边地区</text>
+          </g>
+          <g class="map-compass" transform="translate(600 46)"><path d="M0 -16 L6 6 L0 1 L-6 6 Z"></path><text class="map-sub" x="0" y="24" text-anchor="middle">N</text></g>
+          <text class="map-note" x="24" y="400">示意图 · 非实际比例</text>
+        </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap" data-gallery>
+        <div class="section-head reveal">
+          <div><p class="eyebrow">视觉档案</p><h2>城市、建筑与研究。</h2></div>
+          <div class="gallery-side">
+            <p>以下图片均为 AI 生成的概念图，非公司实际投资项目。</p>
+            <div class="gallery-controls">
+              <button type="button" data-dir="-1" aria-label="上一组"><span class="arrow arrow--left" aria-hidden="true"></span></button>
+              <button type="button" data-dir="1" aria-label="下一组"><span class="arrow" aria-hidden="true"></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery reveal" tabindex="0" role="region" aria-label="概念图画廊">
+          <figure>
+            <div class="frame"><img src="../assets/media/hero-shanghai.jpg" width="1024" height="768" alt="城市天际线" loading="lazy" decoding="async" draggable="false"></div>
+            <figcaption><span>01 · 城市天际线</span><span>上海</span></figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img src="../assets/media/realestate-aerial.jpg" width="1024" height="768" alt="区域住宅开发" loading="lazy" decoding="async" draggable="false"></div>
+            <figcaption><span>02 · 区域住宅开发</span><span>房地产</span></figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img src="../assets/media/planning-model.jpg" width="1024" height="768" alt="项目规划" loading="lazy" decoding="async" draggable="false"></div>
+            <figcaption><span>03 · 项目规划</span><span>房地产</span></figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img src="../assets/media/facade-detail.jpg" width="1024" height="768" alt="建筑细节" loading="lazy" decoding="async" draggable="false"></div>
+            <figcaption><span>04 · 建筑细节</span><span>建筑</span></figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img src="../assets/media/research-desk.jpg" width="1024" height="768" alt="市场研究" loading="lazy" decoding="async" draggable="false"></div>
+            <figcaption><span>05 · 市场研究</span><span>证券投资</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
       <div class="wrap split">
-        <div>
+        <div class="media-tall img-reveal"><img data-parallax="50" src="../assets/media/facade-detail.jpg" width="768" height="1024" alt="建筑立面细节概念图" loading="lazy" decoding="async"></div>
+        <div class="reveal">
           <p class="eyebrow">关于寰创</p>
           <h2>积累经验，深化研究。</h2>
-        </div>
-        <div>
-          <p>寰创于2014年在上海成立，早期以房地产项目投资为主。2018年拓展A股二级市场投资，形成目前两大投资方向。</p>
-          <a class="textlink" href="about.html">了解公司历史<span class="arrow" aria-hidden="true"></span></a>
+          <p class="lead">寰创于2014年在上海成立，早期以房地产项目投资为主。2018年拓展A股二级市场投资，形成目前两大投资方向。</p>
+          <a class="btn" href="about.html">了解公司历史<span class="arrow" aria-hidden="true"></span></a>
         </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="site-footer">
     <div class="wrap">
-      <div class="footgrid">
-        <div>
-          <img src="../01_Logos/HUANCHUANG_horizontal_color.svg" width="1260" height="285" alt="寰创投资管理">
-          <p class="small">中国上海 · 创立于2014年</p>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../01_Logos/HUANCHUANG_horizontal_white.svg" width="1260" height="285" alt="寰创投资管理" loading="lazy">
+          <p>上海寰创投资管理有限公司，立足上海，专注房地产项目股权投资及中国A股市场投资。</p>
         </div>
-        <nav class="footnav" aria-label="页脚导航">
-          <a href="index.html">首页</a>
-          <a href="about.html">关于我们</a>
-          <a href="investment.html">投资业务</a>
-          <a href="contact.html">联系我们</a>
-        </nav>
+        <div class="footer-col">
+          <p class="footer-title">网站导航</p>
+          <a href="index.html">首页</a><a href="about.html">关于我们</a><a href="investment.html">投资业务</a><a href="contact.html">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">投资业务</p>
+          <a href="investment.html#real-estate">房地产项目股权投资</a><a href="investment.html#a-shares">A股投资</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">语言</p>
+          <a href="../zh/index.html" lang="zh-CN" hreflang="zh-CN">中文</a><a href="../en/index.html" lang="en" hreflang="en">English</a>
+        </div>
       </div>
-      <div class="footbase">
+      <p class="footer-mark" aria-hidden="true">HUANCHUANG</p>
+      <div class="footer-base">
         <span>© 2026 上海寰创投资管理有限公司</span>
-        <span>仅供企业信息展示，不构成投资招揽。</span>
+        <span>本网站仅提供一般企业信息，不构成投资产品要约、投资招揽或投资建议。</span>
+        <button type="button" class="to-top" data-top>返回顶部<span class="arrow arrow--up" aria-hidden="true"></span></button>
       </div>
+      <p class="footer-media">网站图片及影像均为 AI 生成的概念素材，仅作视觉示意，非公司实际投资项目。</p>
     </div>
   </footer>
-  <script src="../assets/menu.js"></script>
+  <script src="../assets/site.js" defer></script>
 </body>
 </html>

@@ -2,98 +2,164 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>关于我们 | 寰创投资管理</title>
   <meta name="description" content="上海寰创投资管理有限公司成立于2014年，专注房地产项目股权投资及中国境内A股市场投资。">
-  <meta name="theme-color" content="#FBF7EF">
+  <meta name="theme-color" content="#4B281A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="关于我们 | 寰创投资管理">
+  <meta property="og:description" content="上海寰创投资管理有限公司成立于2014年，专注房地产项目股权投资及中国境内A股市场投资。">
+  <meta property="og:image" content="../assets/media/hero-shanghai.jpg">
+  <link rel="alternate" hreflang="zh-CN" href="../zh/about.html">
   <link rel="alternate" hreflang="en" href="../en/about.html">
-  <link rel="alternate" hreflang="zh-CN" href="about.html">
   <link rel="icon" href="../01_Logos/favicon.ico">
   <link rel="apple-touch-icon" href="../01_Logos/favicon_180.png">
   <link rel="stylesheet" href="../assets/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
   <a class="skip" href="#main">跳转至正文</a>
-  <header>
-    <div class="wrap">
-      <nav aria-label="主导航">
-        <a aria-label="寰创首页" href="index.html"><img class="logo" src="../01_Logos/HUANCHUANG_horizontal_color.svg" width="1260" height="285" alt="寰创投资管理"></a>
-        <button type="button" class="menu" aria-controls="navigation" aria-expanded="false" data-label-open="关闭" data-label-closed="菜单">菜单</button>
-        <div class="links" id="navigation">
-          <a href="index.html">首页</a>
-          <a aria-current="page" href="about.html">关于我们</a>
-          <a href="investment.html">投资业务</a>
-          <a href="contact.html">联系我们</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="寰创首页">
+        <img class="logo-dark" src="../01_Logos/HUANCHUANG_horizontal_color.svg" width="1260" height="285" alt="寰创投资管理">
+        <img class="logo-light" src="../01_Logos/HUANCHUANG_horizontal_white.svg" width="1260" height="285" alt="" aria-hidden="true">
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <div class="nav-links" id="navigation">
+          <a href="index.html" style="--i:0">首页</a>
+          <a href="about.html" style="--i:1" aria-current="page">关于我们</a>
+          <a href="investment.html" style="--i:2">投资业务</a>
+          <a href="contact.html" style="--i:3">联系我们</a>
         </div>
-        <a class="lang-switch" href="../en/about.html" hreflang="en" lang="en">EN</a>
       </nav>
+      <a class="lang-switch" href="../en/about.html" hreflang="en" lang="en">EN</a>
+      <button type="button" class="menu-btn" aria-controls="navigation" aria-expanded="false" data-label-open="关闭" data-label-closed="菜单"><span class="menu-label">菜单</span><span class="bars" aria-hidden="true"><i></i><i></i></span></button>
     </div>
   </header>
   <main id="main">
-    <div class="wrap">
-      <section class="page-top reveal">
-        <p class="eyebrow">关于我们</p>
-        <h1>经验塑造投资视角。</h1>
-        <p class="intro">上海寰创投资管理有限公司专注于房地产项目股权投资及中国境内A股市场投资。</p>
-      </section>
-      <section class="section rule split">
-        <h2>立足上海，关注区域投资机会。</h2>
-        <div>
-          <p>寰创成立于2014年，早期主要关注上海及周边地区、四川成都及周边市县的房地产项目投资。</p>
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="crumbs hero-fade" aria-label="Breadcrumb"><a href="index.html">首页</a><span aria-hidden="true">/</span><span aria-current="page">关于我们</span></nav>
+        <div class="page-hero-grid">
+          <div>
+            <p class="eyebrow hero-fade" style="--d:.1s">关于我们</p>
+            <h1 class="split-lines"><span class="line"><span style="--i:0">经验塑造投资视角。</span></span></h1>
+          </div>
+          <p class="lead hero-fade" style="--d:.6s">上海寰创投资管理有限公司专注于房地产项目股权投资及中国境内A股市场投资。</p>
+        </div>
+      </div>
+      <figure class="wrap page-hero-media hero-fade" style="--d:.45s">
+        <div class="frame"><img data-parallax="50" src="../assets/media/facade-detail.jpg" width="1024" height="768" alt="建筑立面细节概念图"></div>
+        <figcaption>建筑细节概念图 · AI 生成</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split--top">
+        <h2 class="reveal">立足上海，关注区域投资机会。</h2>
+        <div class="reveal" style="--d:.15s">
+          <p class="lead">寰创成立于2014年，早期主要关注上海及周边地区、四川成都及周边市县的房地产项目投资。</p>
           <p class="muted">公司房地产投资业务以房地产开发及项目管理经验为基础，部分项目与当地开发企业共同投资及管理。</p>
           <p class="muted">自2018年起，公司亦使用自有资金参与A股二级市场投资，以市场研究及上市公司分析为投资判断依据。</p>
         </div>
-      </section>
-      <section class="section rule">
-        <p class="eyebrow">发展历程</p>
-        <h2>两个重要发展阶段。</h2>
-        <div class="timeline">
-          <article>
-            <div class="year">2014</div>
-            <h3>房地产投资起步</h3>
-            <p class="muted">公司在上海成立，初期以房地产项目投资为主要方向。</p>
-          </article>
-          <article>
-            <div class="year">2018</div>
-            <h3>拓展投资领域</h3>
-            <p class="muted">在原有房地产业务基础上增加中国A股二级市场投资。</p>
-          </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap split split--top">
+        <div class="facts-head reveal">
+          <p class="eyebrow">公司概况</p>
+          <h2>一页了解寰创。</h2>
         </div>
-      </section>
-    </div>
-    <section class="dark section">
-      <div class="wrap split">
-        <div>
-          <p class="eyebrow">投资思路</p>
-          <h2>理解市场，研究投资机会。</h2>
-        </div>
-        <div>
-          <p>两大投资方向分别依托房地产开发与项目管理经验，以及证券市场与上市公司研究。</p>
-          <a class="textlink" href="investment.html">查看投资业务<span class="arrow" aria-hidden="true"></span></a>
+        <div class="table-wrap reveal" style="--d:.15s">
+          <table class="data-table data-table--facts">
+            <caption class="sr-only">公司概况</caption>
+            <tbody data-stagger>
+              <tr><th scope="row">公司名称</th><td>上海寰创投资管理有限公司</td></tr>
+              <tr><th scope="row">成立时间</th><td>2014年</td></tr>
+              <tr><th scope="row">所在地</th><td>中国上海</td></tr>
+              <tr><th scope="row">主要业务</th><td>房地产项目股权投资；中国A股投资</td></tr>
+              <tr><th scope="row">房地产关注区域</th><td>上海及周边地区；四川成都及周边市县</td></tr>
+              <tr><th scope="row">A股投资资金</th><td>公司自有资金</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
-  </main>
-  <footer>
-    <div class="wrap">
-      <div class="footgrid">
-        <div>
-          <img src="../01_Logos/HUANCHUANG_horizontal_color.svg" width="1260" height="285" alt="寰创投资管理">
-          <p class="small">中国上海 · 创立于2014年</p>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">发展历程</p>
+          <h2>从起步到双线并行。</h2>
         </div>
-        <nav class="footnav" aria-label="页脚导航">
-          <a href="index.html">首页</a>
-          <a href="about.html">关于我们</a>
-          <a href="investment.html">投资业务</a>
-          <a href="contact.html">联系我们</a>
-        </nav>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-year">2014</div>
+            <div><h3>房地产投资起步</h3><p>公司在上海成立，初期以房地产项目投资为主要方向。</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2018</div>
+            <div><h3>拓展投资领域</h3><p>在原有房地产业务基础上增加中国A股二级市场投资。</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">今天</div>
+            <div><h3>两大投资方向</h3><p>房地产项目股权投资与A股投资并行开展。</p></div>
+          </div>
+        </div>
       </div>
-      <div class="footbase">
+    </section>
+
+    <section class="section dark">
+      <div class="wrap split">
+        <div class="reveal">
+          <p class="eyebrow">投资思路</p>
+          <h2>理解市场，研究投资机会。</h2>
+          <p class="lead">两大投资方向分别依托房地产开发与项目管理经验，以及证券市场与上市公司研究。</p>
+          <div class="pillars" data-stagger>
+            <div class="pillar"><span>01</span><b>房地产开发与项目管理经验</b><p>支撑区域房地产项目的股权投资判断。</p></div>
+            <div class="pillar"><span>02</span><b>证券市场与上市公司研究</b><p>为A股投资决策提供依据。</p></div>
+          </div>
+          <a class="textlink textlink--light" href="investment.html">查看投资业务<span class="arrow" aria-hidden="true"></span></a>
+        </div>
+        <figure class="reveal" style="--d:.2s; margin:0">
+          <div class="media-tall img-reveal"><img data-parallax="50" src="../assets/media/planning-model.jpg" width="1024" height="768" alt="建筑规划模型概念图" loading="lazy" decoding="async"></div>
+          <figcaption class="media-caption">项目规划概念图 · AI 生成</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../01_Logos/HUANCHUANG_horizontal_white.svg" width="1260" height="285" alt="寰创投资管理" loading="lazy">
+          <p>上海寰创投资管理有限公司，立足上海，专注房地产项目股权投资及中国A股市场投资。</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">网站导航</p>
+          <a href="index.html">首页</a><a href="about.html">关于我们</a><a href="investment.html">投资业务</a><a href="contact.html">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">投资业务</p>
+          <a href="investment.html#real-estate">房地产项目股权投资</a><a href="investment.html#a-shares">A股投资</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">语言</p>
+          <a href="../zh/about.html" lang="zh-CN" hreflang="zh-CN">中文</a><a href="../en/about.html" lang="en" hreflang="en">English</a>
+        </div>
+      </div>
+      <p class="footer-mark" aria-hidden="true">HUANCHUANG</p>
+      <div class="footer-base">
         <span>© 2026 上海寰创投资管理有限公司</span>
-        <span>仅供企业信息展示，不构成投资招揽。</span>
+        <span>本网站仅提供一般企业信息，不构成投资产品要约、投资招揽或投资建议。</span>
+        <button type="button" class="to-top" data-top>返回顶部<span class="arrow arrow--up" aria-hidden="true"></span></button>
       </div>
+      <p class="footer-media">网站图片及影像均为 AI 生成的概念素材，仅作视觉示意，非公司实际投资项目。</p>
     </div>
   </footer>
-  <script src="../assets/menu.js"></script>
+  <script src="../assets/site.js" defer></script>
 </body>
 </html>
