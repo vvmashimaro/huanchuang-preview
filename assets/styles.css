@@ -585,7 +585,7 @@ html[lang="zh-CN"] .eyebrow {
 }
 
 .hero h1 {
-  max-width: 11em;
+  max-width: 16em;
   margin-bottom: 30px;
 }
 
@@ -593,7 +593,15 @@ html[lang="zh-CN"] .hero h1 { font-size: clamp(44px, 6.2vw, 96px); }
 
 .hero .lead {
   color: rgba(251, 247, 239, 0.82);
-  margin-bottom: 40px;
+  margin-bottom: 18px;
+}
+
+.hero-company {
+  margin: 0 0 36px;
+  font-family: var(--serif);
+  font-size: clamp(18px, 1.5vw, 22px);
+  line-height: 1.45;
+  color: rgba(251, 247, 239, 0.92);
 }
 
 .hero-actions {
@@ -621,6 +629,7 @@ html[lang="zh-CN"] .hero h1 { font-size: clamp(44px, 6.2vw, 96px); }
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  margin-left: auto;
 }
 
 .scroll-cue i {
@@ -650,7 +659,7 @@ html[lang="zh-CN"] .hero h1 { font-size: clamp(44px, 6.2vw, 96px); }
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .stat {
@@ -1275,6 +1284,10 @@ html[lang="zh-CN"] .data-table thead th { letter-spacing: 0.2em; }
   color: var(--gold);
 }
 
+.tl-year--mark {
+  font-weight: 400;
+}
+
 .tl-item h3 { margin-bottom: 10px; }
 .tl-item p { margin: 0; color: var(--muted); max-width: 36rem; }
 
@@ -1376,6 +1389,8 @@ html[lang="zh-CN"] .data-table thead th { letter-spacing: 0.2em; }
   scroll-margin-top: calc(var(--header) + 64px);
 }
 
+.section[id] { scroll-margin-top: calc(var(--header) + 72px); }
+
 .detail:first-of-type { border-top: 0; }
 
 .detail-aside {
@@ -1474,6 +1489,13 @@ html[lang="zh-CN"] .steps-title { letter-spacing: 0.3em; }
   margin: 0;
   font-size: 14px;
   color: var(--muted);
+}
+
+@media (min-width: 861px) {
+  .steps li:nth-child(n + 4) {
+    margin-top: 28px;
+    padding-top: 28px;
+  }
 }
 
 .faq {
@@ -1635,6 +1657,12 @@ html[lang="zh-CN"] .office-fields dt {
   font-size: clamp(20px, 1.7vw, 26px);
   line-height: 1.45;
   color: var(--ink-2);
+}
+
+.office-fields dd.field-blank {
+  font-family: var(--sans);
+  font-size: 18px;
+  color: var(--muted);
 }
 
 .addr-unit { white-space: nowrap; }
@@ -1849,9 +1877,19 @@ html[lang="zh-CN"] .footer-title { letter-spacing: 0.3em; }
 
 .to-top:hover .arrow { transform: rotate(-90deg) translateX(4px); }
 
-.footer-media {
+.footer-legal {
   margin: 18px 0 0;
+  max-width: 72rem;
+  font-size: 12px;
+  line-height: 1.75;
+  color: rgba(251, 247, 239, 0.62);
+}
+
+.footer-media {
+  margin: 12px 0 0;
+  max-width: 72rem;
   font-size: 11px;
+  line-height: 1.7;
   color: rgba(251, 247, 239, 0.45);
 }
 
